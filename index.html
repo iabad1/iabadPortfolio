@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Isiah Abad | Portfolio</title>
+</head>
+<body>
+    
+    <div id="main-container">
+
+        <header id="main-header">
+            <nav id="navigation-bar">
+
+                <ul>
+                    <li class="header-links"><a href="#top" onclick="currentNav(0)">ABOUT</a></li>
+                    <li class="header-links"><a href="#experience" onclick="currentNav(1)">EXPERIENCE</a></li>
+                    <li class="header-links"><a href="#contact" onclick="currentNav(2)">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="main-body">
+
+            <section class="sections" id="introduction-section" >
+
+                <div id="intro">
+
+                    <div id="description">
+                        
+                        <h1 id="header-title" class="fade" id="top" >
+                            Hi, I'm Isiah Abad.
+                        </h1>
+                        <h3 id="header-details" class="fade-details" >I am an undergraduate ASU Computer Science student who has a passion for full stack development!</h3>
+
+                        <h1 id="header-title" class="fade" id="top">
+                            I'm a Junior at ASU.
+                        </h1>
+                        <h3 id="header-details" class="fade-details">I have studied languages such as Java, C/C++, and a bit of Python! I will be graduating May 2022!</h3>
+
+                        <h1 id="header-title" class="fade" id="top">
+                            I'm also artistic.
+                        </h1>
+                        <h3 id="header-details" class="fade-details">When I don't code, I get creative! I like to draw, paint, edit videos, and do some graphic design!</h3>
+
+                        <div class="circles-container">
+                            <span class="circle" id="circle1" onclick="currentSlide(0)">1</span>
+                            <span class="circle" id="circle2" onclick="currentSlide(1)">2</span>
+                            <span class="circle" id="circle3" onclick="currentSlide(2)">3</span>
+                        </div>
+
+                    </div> <!--End description-->
+
+                        <img src="images/profilePic_2.jpg" alt="Isiah Abad Profile Pic"  class="fade-image">
+                        <img src="images/slide2_1.PNG" alt="Isiah Abad Profile Pic" class="fade-image">
+                        <img src="images/slide3.PNG" alt="Isiah Abad Profile Pic" class="fade-image">
+
+                </div> <!--End intro-->
+                
+            </section>
+
+            <section class="sections" id="experience-section">
+
+                    <h1 class="link-title" id="experience">Experience</h1>
+
+                    <div class="timeline">
+
+                        <div class="timeline-body">
+                            
+                            <div class="timeline-item">
+                            <p class="dates">August 2018</p>
+
+                            <div class="content">
+                                <h2 class="timeline-title">Started my coding Journey:</h2>
+                                <p>During this year, I took my introductory courses and learned about the basics of Java Programming.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <p class="dates">January 2019</p>
+    
+                                <div class="content">
+                                    <h2 class="timeline-title">Learned about Object Orientation:</h2>
+                                    <p>At the start of my spring semester during Freshman year, I learned how to create GUI and learned simple data structures and the basics of object orientation in Java.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="timeline-item">
+                                <p class="dates">August 2019</p>
+    
+                                <div class="content">
+                                    <h2 class="timeline-title">Introduced to C/C++</h2>
+                                    <p>Learned object-orientation in C and C++, and applicative languages such as Scheme.</p>
+                                </div>
+
+                            </div>
+                            <div class="timeline-item">
+                                <p class="dates">May 2020 - <br> Jan 2021</p>
+    
+                                <div class="content">
+                                    <h2 class="timeline-title">Codakid</h2>
+                                    <p>Worked as an online coding instructor for students from around the world and taught courses in languages such as Java, Lua, and Python. </p>
+                                </div>
+
+                            </div>
+
+                            <div class="timeline-item">
+                                <p class="dates">August 2020</p>
+    
+                                <div class="content">
+                                    <h2 class="timeline-title">Data Structures and Algorithms & Intro to Software Engineering</h2>
+                                    <p>Introduced to time complexities, several data structures, and the importance of these algorithms. </p>
+                                    
+                                </div>
+
+                            </div>
+
+
+                            <div class="timeline-item">
+                                <p class="dates">Dec. 2020</p>
+    
+                                <div class="content">
+                                    <h2 class="timeline-title">Discovered a passion for front-end and back-end development!</h2>
+                                    <p>During my winter break, I learned how to use HTML and CSS, and discovered that my passion to design and create can be used through coding websites! </p>
+                                
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                       
+                       
+
+                    </div> <!--End timeline-->
+                    
+               
+
+            </section><!--End experience section-->
+            
+            <section class="sections" id="contact">
+                <h2>Any Questions?</h2>
+                <p>Feel free to contact me!</p>
+
+                <ul>
+                    <li><a href="mailto:isiahianabad@gmail.com"><img src="images/black-Mail-logo.png" alt="mail"></a></li>
+                    <li><a href="https://www.linkedin.com/in/isiah-abad-4945461b7/"><img src="images/linkedin-logo.png" alt="linkedin"></a></li>
+                    <li><a href="https://github.com/iabad1"><img src="images/github-logo.png" alt="github"></a></li>
+                </ul>
+              
+            </section>
+
+            <script src="script.js"></script>
+
+
+        </div> <!--End main-body-->
+    </div> <!--End main container-->
+
+</body>
+</html>

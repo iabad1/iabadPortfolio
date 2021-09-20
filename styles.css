@@ -59,19 +59,19 @@ h2, p{
 }
 
 #intro{
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    margin: 100px auto;
+    padding: 10rem 0;
     width: 90%;
+    margin: 0 auto;
 }
 
 .img-container{
     height: auto;
     width: 20%;
-
-    background-color: aquamarine;
 }
 #intro img{
    
@@ -134,7 +134,7 @@ h2, p{
 
 #description{
    
-    margin: 175px 50px;
+    margin: 0 20px;
     width: 30%;
 
     padding: 0px;
@@ -142,24 +142,6 @@ h2, p{
 }
 
 
-@media screen and (max-width:800px){
-    #intro img{
-        box-shadow: none;
-    }
-    .img-container{
-        width: 90%;
-    }
-    #intro{
-        flex-direction: column;
-       
-    }
-    #description{
-        margin: 20px;
-        padding: 0;
-        width: 90%;
-    }
-
-}
 #description h1{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.25s;
@@ -256,7 +238,7 @@ h2, p{
     
     color: rgb(228, 227, 227);
 
-    max-width: 1000px;
+    width: 50%;
     margin: 0 auto;
     padding-bottom: 50px;
 
@@ -314,6 +296,29 @@ h2, p{
     padding-bottom: 40px;
 }
 
+
+@media screen and (max-width:800px){
+    #intro img{
+        box-shadow: none;
+    }
+    .img-container{
+        width: 90%;
+    }
+    #intro{
+        flex-direction: column;
+        
+    }
+    #description{
+        margin: 20px 0;
+        padding: 0;
+        width: 90%;
+    }
+
+    .timeline{
+        width: 95%;
+    }
+
+}
 
 
 

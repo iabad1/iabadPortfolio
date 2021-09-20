@@ -43,10 +43,6 @@ h2, p{
     
 }
 
-#header-title{
-    white-space: nowrap;
-}
-
 #navigation-bar li{
 
     display: inline-block;
@@ -71,10 +67,18 @@ h2, p{
     width: 90%;
 }
 
+.img-container{
+    height: auto;
+    width: 20%;
+
+    background-color: aquamarine;
+}
 #intro img{
    
-    height: 430px;
-    margin: 40px 20px;
+    height: 90%;
+    width: 100%;
+    margin: 0 auto;
+
 
     box-shadow: 15px 10px 1px #A44849;
     -webkit-animation-name: fade;
@@ -95,6 +99,7 @@ h2, p{
 }
 .fade-image{
     display: none;
+
 }
 
 
@@ -130,7 +135,7 @@ h2, p{
 #description{
    
     margin: 175px 50px;
-    max-width: 400px;
+    width: 30%;
 
     padding: 0px;
     text-align: left;
@@ -139,9 +144,10 @@ h2, p{
 
 @media screen and (max-width:800px){
     #intro img{
-        margin: 0 auto;
         box-shadow: none;
-        height: 500px;
+    }
+    .img-container{
+        width: 90%;
     }
     #intro{
         flex-direction: column;
@@ -150,6 +156,7 @@ h2, p{
     #description{
         margin: 20px;
         padding: 0;
+        width: 90%;
     }
 
 }

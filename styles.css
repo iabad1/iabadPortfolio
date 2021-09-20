@@ -10,8 +10,6 @@ body{
     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     background-color:#282c34;
-
-    
 }
 
 a{
@@ -23,15 +21,30 @@ h1{
     font-size: 45px;
 }
 
+h2, p{
+    margin: 0.3125rem;
+}
 
+.page-links{
+    color: #A44849;
+    border-bottom: 2px dashed #A44849;
+}
 #main-header{
-    text-align: center;
+    
     display: flex;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
     justify-content: flex-end;
 
     /*width: 100vw;*/
     background-color: #1b1b1b;
     
+}
+
+#header-title{
+    white-space: nowrap;
 }
 
 #navigation-bar li{
@@ -52,9 +65,10 @@ h1{
 #intro{
     display: inline-flex;
     justify-content: center;
+    align-items: center;
 
     margin: 100px auto;
-    
+    width: 90%;
 }
 
 #intro img{
@@ -70,22 +84,7 @@ h1{
    
 }
 
-@media screen and (max-width:800px){
-    #intro img{
-        margin: 0 auto;
-        box-shadow: none;
-        height: 500px;
-    }
-    #intro{
-        display: inline-block;
-       
-    }
-    #description{
-        margin: 0;
-        padding: 0;
-    }
 
-}
 /*introduction fade properties*/
 .fade{
     display: none;
@@ -137,6 +136,23 @@ h1{
     text-align: left;
 }
 
+
+@media screen and (max-width:800px){
+    #intro img{
+        margin: 0 auto;
+        box-shadow: none;
+        height: 500px;
+    }
+    #intro{
+        flex-direction: column;
+       
+    }
+    #description{
+        margin: 20px;
+        padding: 0;
+    }
+
+}
 #description h1{
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.25s;
@@ -275,7 +291,7 @@ h1{
     
     left: -12px;
     top: 15px;
-    z-index: 9;
+    z-index: 4;
 
     
 }

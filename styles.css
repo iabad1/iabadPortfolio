@@ -9,7 +9,7 @@ html{
 body{
     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
-    background-color:#282c34;
+    background: linear-gradient(#282c34, #000000);
 }
 
 a{
@@ -237,7 +237,6 @@ h2, p{
 .timeline{
     
     color: rgb(228, 227, 227);
-
     width: 50%;
     margin: 0 auto;
     padding-bottom: 50px;
@@ -248,7 +247,7 @@ h2, p{
     position: relative;
     text-align: left;
     margin-left: 100px;
-    background-color: #1b1b1b;
+    background: #1b1b1b;
 
     padding: 5px 0;
 }

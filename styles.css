@@ -21,6 +21,7 @@ h1{
     font-size: 45px;
 }
 
+
 h2, p{
     margin: 0.3125rem;
 }
@@ -40,6 +41,8 @@ h2, p{
 
     /*width: 100vw;*/
     background-color: #1b1b1b;
+    box-shadow: 0px 1px 5px #0f0f0f;
+
     
 }
 
@@ -70,15 +73,19 @@ h2, p{
 }
 
 .img-container{
-    height: auto;
-    width: 20%;
+    width: 400px;
+    height: 650px;
+   
+}
+.img-container>img{
+    object-fit: cover;
+    border-radius: 10px;
 }
 #intro img{
    
     height: 90%;
     width: 100%;
     margin: 0 auto;
-
 
     box-shadow: 15px 10px 1px #A44849;
     -webkit-animation-name: fade;
@@ -193,7 +200,7 @@ h2, p{
 
 
 
-#contact, #features{
+#contact, #featured{
     background-color: #0f0f0f;
     color: #FFFFFF;
     padding: 50px 0;
@@ -293,7 +300,30 @@ h2, p{
     margin: 20px;
     padding-bottom: 40px;
 }
+#features-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+#features-row > a:not(:first-child){
+    padding-left: 50px;
+}
 
+.features-item{
+    background-color: #282c34;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+#features-row .features-item>img{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+   
+}
 
 @media screen and (max-width:800px){
     #intro img{

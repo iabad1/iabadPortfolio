@@ -314,6 +314,7 @@ h2, p{
     background-color: #282c34;
     padding: 15px;
     border-radius: 10px;
+   
 }
 
 
@@ -333,7 +334,9 @@ h2, p{
         width: 90%;
     }
     #intro{
+        justify-content: center;
         flex-direction: column;
+        align-items: center;
         
     }
     #description{
@@ -341,10 +344,19 @@ h2, p{
         padding: 0;
         width: 90%;
     }
-
+    #features-row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    #features-row > a:not(:first-child){
+       padding: 50px 0px 0px 0px;
+    }
     .timeline{
         width: 95%;
     }
+    
 
 }
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Isiah Abad | Portfolio</title>
 </head>
 <body>
@@ -61,7 +62,7 @@
                 
             </section>
             <section class="sections" id="featured">
-                <h1>Featured</h1>
+                <h1 class="link-title">Featured & Designs</h1>
                 <div id="features-row">
                     <a href="links/Isiah Abad - Software Engineer Resume.pdf" target="_blank">
                         <div class="features-item">
@@ -89,8 +90,48 @@
                     </a>
                     
                 </div>
-                <p>To view more projects, please visit <a href="https://github.com/iabad1" class="page-links">https://github.com/iabad1</a></p>
+                <section class="sections" id="gallery">
+                    <div id="gallery-container">
+                    
+                        <div class="grid-item">
+                            
+                            <img src="images/webDesign1.png"  class="grid-img" alt="Evolution Web Design" onclick="openGallery(0)">
+                        </div>
+                        <div class="grid-item">
+                                <img src="images/webDesign2.jpg" class="grid-img" alt="Pacific Trails Resort Web Design" onclick="openGallery(1)">
+                        </div>
+                        <div class="grid-item">
+                                <img src="images/webDesign3.png" class="grid-img" alt="Mini FG Web Design" onclick="openGallery(2)">
+                        </div>
+                        <div class="grid-item">
+                                <img src="images/webDesign4.png" class="grid-img" alt="Zaynamations Blog Web Design" onclick="openGallery(3)">
+                        </div>
+                        
+                    </div>
+                </section>
+                <p>To view more projects & design details, please visit <a href="https://github.com/iabad1" class="page-links" target="_blank">https://github.com/iabad1</a></p>
             </section>
+            
+
+            <section id="gallery-view" class="hidden">
+                <div id="gallery-view-container">
+                    <div id="gallery-header">
+                        <button class="material-symbols-outlined" id="gallery-close-button" onclick="closeGallery()" >
+                            close
+                        </button>
+                    </div>
+                    <div id="gallery-viewer">
+                        <button class="material-symbols-outlined" id="gallery-prev-button" onclick="goPreviousImage()">arrow_back</button>
+                        <div id="gallery-image-container">
+                            <img id="gallery-image" src="" alt="">
+                        </div>
+                        <button class="material-symbols-outlined" id="gallery-next-button" onclick="goNextImage()">arrow_forward</button>
+                    </div>
+                </div>
+                
+
+            </section>
+
 
             <section class="sections" id="experience-section">
 
@@ -229,6 +270,8 @@
             </section>
 
             <script src="script.js"></script>
+            <script src="galleryView.js"></script>
+
 
 
         </div> <!--End main-body-->

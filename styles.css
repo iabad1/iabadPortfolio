@@ -3,6 +3,15 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -10,6 +19,7 @@ body{
     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     background: linear-gradient(#282c34, #000000);
+    
 }
 
 a{
@@ -24,6 +34,11 @@ h1{
 
 h2, p{
     margin: 0.3125rem;
+}
+
+button{
+    text-align: center;
+    cursor: pointer;
 }
 
 .page-links{
@@ -235,6 +250,87 @@ h2, p{
     background-size: cover;
     background-attachment: fixed;
 }
+
+
+#gallery{
+    
+
+}
+#gallery-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    padding: 0px 20px;
+    margin: 0 auto;
+    
+    gap: 20px;
+}
+.grid-img{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.grid-img:hover{
+    cursor: pointer;
+}
+
+.grid-item{
+    position: relative;
+}
+
+/**** GALLERY ****/
+
+#gallery-view.hidden{
+    display: none;
+}
+
+#gallery-view{
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    justify-content:center ;
+}
+#gallery-view-container{
+    
+    height: 100%;
+    padding: 20px;
+    background-color: #0f0f0fb1;
+}
+
+#gallery-viewer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    margin: 50px;
+}
+
+#gallery-image-container{
+    width: 100%;
+}
+#gallery-image{
+    width: 100%;
+    height: 780px;
+    object-fit: contain;
+
+}
+
+#gallery-header{
+    text-align: right;
+}
+
+
+
+
+
+
 
 .timeline{
     
